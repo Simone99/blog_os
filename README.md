@@ -3,6 +3,7 @@
 [![Build Status](https://github.com/phil-opp/blog_os/workflows/Code/badge.svg?branch=post-12)](https://github.com/phil-opp/blog_os/actions?query=workflow%3A%22Code%22+branch%3Apost-12)
 
 This repository contains the source code for the [File system][post] post of the [Writing an OS in Rust](https://os.phil-opp.com) series.
+Inspired by [this project](https://github.com/maestro-os/maestro)
 
 [post]: https://os.phil-opp.com/filesystem/
 
