@@ -7,8 +7,8 @@
 extern crate alloc;
 
 use blog_os::framebuffer::init_framebuffer;
-use blog_os::println;
 use blog_os::task::{executor::Executor, keyboard, Task};
+use blog_os::{file, println};
 use bootloader_api::{config::Mapping, entry_point, info::BootInfo, BootloaderConfig};
 use core::panic::PanicInfo;
 
@@ -39,6 +39,11 @@ fn kernel_main(boot_info: &'static mut BootInfo) -> ! {
     let mut frame_allocator = unsafe { BootInfoFrameAllocator::init(&boot_info.memory_regions) };
 
     allocator::init_heap(&mut mapper, &mut frame_allocator).expect("heap initialization failed");
+
+    match file::init() {
+        Ok(_) => {}
+        Err(error_text) => println!("{}", error_text),
+    };
 
     #[cfg(test)]
     test_main();

@@ -1,1 +1,0 @@
-cargo:rustc-env=BIOS_PATH=/home/simone/Desktop/test_rust/blog_os/target/debug/build/os-b673063ef6166ef1/out/bios.img
