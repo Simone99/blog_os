@@ -1,4 +1,4 @@
-# Blog OS (Async/Await)
+# Blog OS (File system)
 
 [![Build Status](https://github.com/phil-opp/blog_os/workflows/Code/badge.svg?branch=post-12)](https://github.com/phil-opp/blog_os/actions?query=workflow%3A%22Code%22+branch%3Apost-12)
 
